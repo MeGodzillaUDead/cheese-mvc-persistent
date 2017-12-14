@@ -12,7 +12,7 @@
 
 <div class="list">
     <ul>
-        <li th:each="item : ${menus}"><a href="/menu/view/${item.id}" th:text="${item.name}"></a></li>
+        <li th:each="item : ${menus}"><a th:href="@{'/menu/view/' + ${item.id}}" th:text="${item.name}"></a></li>
     </ul>
 </div>
 <div class="mininav"><a href="/menu/add">Add Menu</a></div>
