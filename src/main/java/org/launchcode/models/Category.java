@@ -8,6 +8,7 @@ import javax.validation.constraints.Size;
 
 @Entity
 public class Category {
+
     @Id
     @GeneratedValue
     private int id;
